@@ -1,0 +1,6 @@
+.kanbanBoardLayoutContainer {
+  background-color: var(--light-blue);
+  display: flex;
+  flex: 1;
+  padding: 22px 26px;
+}

@@ -1,0 +1,11 @@
+.ticketTagContainer {
+  display: flex;
+  gap: 6px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.tagTitle {
+  font-size: 0.8rem;
+}

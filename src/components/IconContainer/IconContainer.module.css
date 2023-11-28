@@ -1,0 +1,14 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Adjust the width of the container */
+  height: 30px; /* Adjust the height of the container */
+  border: 1px solid var(--light-grey); /* Light gray border */
+  border-radius: 6px; /* Rounded border */
+}
+
+.icon {
+  color: #555555; /* Icon color */
+  font-size: 1.2rem; /* Adjust the icon size */
+}

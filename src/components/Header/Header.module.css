@@ -1,0 +1,7 @@
+.headerContainer {
+  height: 60px;
+  background-color: var(--main-white);
+  padding: 10px 36px;
+  display: flex;
+  align-items: center;
+}

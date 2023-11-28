@@ -1,0 +1,9 @@
+.twoLineTruncate {
+  padding: 6px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  text-overflow: ellipsis;
+}
+

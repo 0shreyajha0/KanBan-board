@@ -1,0 +1,22 @@
+/* IconButton.module.css */
+
+.iconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 25px;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.iconButton:hover {
+  background-color: #eeeeee; /* Background color on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.icon {
+  color: #333333; /* Icon color */
+  font-size: 18px; /* Adjust the icon size */
+}
