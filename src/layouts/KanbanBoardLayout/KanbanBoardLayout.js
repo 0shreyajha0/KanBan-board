@@ -1,37 +1,48 @@
 import React from 'react';
 import styles from './KanbanBoardLayout.module.css';
 import { FaPlus } from 'react-icons/fa6';
+import { IoArrowBackCircle } from "react-icons/io5";
+import { FaRegCircle } from "react-icons/fa";
+import { PiClockClockwiseBold } from "react-icons/pi";
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
+import { GiCancel } from "react-icons/gi";
+import { BsExclamationSquareFill } from "react-icons/bs";
+import { BsThreeDots } from "react-icons/bs";
+import { MdOutlineSignalCellularAlt } from "react-icons/md";
+import { MdOutlineSignalCellularAlt2Bar } from "react-icons/md";
+import { MdOutlineSignalCellularAlt1Bar } from "react-icons/md";
 import { TicketCard, KanbanBoardColumn } from '../../components';
+
 
 export const KanbanBoardLayout = (props) => {
   const { categorizedStatusArray = [], categorizedPriorityArray = [], currentGrouping } = props;
   const statusConfigArray = [
     {
-      statusIcon: FaPlus,
+      statusIcon: IoArrowBackCircle,
       statusName: 'Backlog',
       isAvatar: false,
       ticketCount: categorizedStatusArray?.Backlog.length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: FaRegCircle,
       statusName: 'Todo',
       isAvatar: false,
       ticketCount: categorizedStatusArray?.Todo.length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: PiClockClockwiseBold,
       statusName: 'In Progress',
       isAvatar: false,
       ticketCount: categorizedStatusArray?.InProgress.length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: IoCheckmarkDoneCircle,
       statusName: 'Done',
       isAvatar: false,
       ticketCount: categorizedStatusArray?.Done.length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: GiCancel,
       statusName: 'Canceled',
       isAvatar: false,
       ticketCount: categorizedStatusArray?.Canceled.length
@@ -40,31 +51,31 @@ export const KanbanBoardLayout = (props) => {
 
   const priorityConfigArray = [
     {
-      statusIcon: FaPlus,
+      statusIcon: BsThreeDots,
       statusName: 'No priority',
       isAvatar: false,
       ticketCount: categorizedPriorityArray[0].length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: BsExclamationSquareFill,
       statusName: 'Urgent',
       isAvatar: false,
       ticketCount: categorizedPriorityArray[1].length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: MdOutlineSignalCellularAlt,
       statusName: 'High',
       isAvatar: false,
       ticketCount: categorizedPriorityArray[2].length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: MdOutlineSignalCellularAlt2Bar,
       statusName: 'Medium',
       isAvatar: false,
       ticketCount: categorizedPriorityArray[3].length
     },
     {
-      statusIcon: FaPlus,
+      statusIcon: MdOutlineSignalCellularAlt1Bar,
       statusName: 'Low',
       isAvatar: false,
       ticketCount: categorizedPriorityArray[4].length
